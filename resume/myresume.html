@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume — Canva Embed</title>
+    <style>
+         :root {
+             --card-radius: 12px;
+             --shadow: 0 2px 8px rgba(63,69,81,0.16);
+             --bg: #f6f7f9;
+             --container-max: 1000px;
+         }
+
+         html, body {
+             height: 100%;
+             margin: 0;
+             font-family: Inter, "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial;
+             background: linear-gradient(180deg, var(--bg) 0%, #ffffff 100%);
+             color: #21262d;
+             -webkit-font-smoothing: antialiased;
+             -moz-osx-font-smoothing: grayscale;
+         }
+
+         .page {
+             min-height: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding: 40px 20px;
+             box-sizing: border-box;
+         }
+
+         .card {
+             width: 100%;
+             max-width: var(--container-max);
+             background: #fff;
+             border-radius: var(--card-radius);
+             box-shadow: var(--shadow);
+             padding: 18px;
+             box-sizing: border-box;
+         }
+
+         /* Responsive embed container that keeps the same aspect ratio as the original:
+        The user supplied padding-top: 129.4118% (approx 1.294118 -> 1.294:1). We'll keep that */
+         .embed-wrap {
+             position: relative;
+             width: 100%;
+             height: 0;
+             padding-top: 129.4118%;
+             overflow: hidden;
+             border-radius: 8px;
+         }
+
+             .embed-wrap iframe {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 border: 0;
+             }
+
+         .meta {
+             margin-top: 12px;
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             gap: 12px;
+             font-size: 14px;
+         }
+
+         .canva-link {
+             color: #0a66c2;
+             text-decoration: none;
+             border-radius: 6px;
+             padding: 8px 12px;
+             background: #f5f8ff;
+             display: inline-block;
+         }
+
+             .canva-link:hover {
+                 text-decoration: underline;
+             }
+
+         .attribution {
+             font-size: 13px;
+             color: #586069;
+         }
+
+         /* small screens: reduce padding & radius */
+         @media (max-width:480px) {
+             .card {
+                 padding: 12px;
+                 border-radius: 10px;
+             }
+         }
+    </style>
+</head>
+<body>
+    <main class="page" role="main">
+        <article class="card" aria-labelledby="title">
+            <h1 id="title" style="margin:0 0 12px 0; font-size:18px;">Gray and White Simple Clean Resume</h1>
+
+            <div class="embed-wrap" aria-hidden="false">
+                <!-- Canva embed iframe from user -->
+                <iframe loading="lazy"
+                        src="https://www.canva.com/design/DAG1yDB8OlM/HPRkhCcWrte0S8P5RIR_Iw/view?embed"
+                        allowfullscreen="allowfullscreen"
+                        allow="fullscreen"
+                        title="Canva design: Gray and White Simple Clean Resume">
+                </iframe>
+            </div>
+
+            <div class="meta" role="contentinfo">
+                <a class="canva-link"
+                   href="https://www.canva.com/design/DAG1yDB8OlM/HPRkhCcWrte0S8P5RIR_Iw/view?utm_content=DAG1yDB8OlM&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                   target="_blank" rel="noopener noreferrer">
+                    Open in Canva (Gray and White Simple Clean Resume)
+                </a>
+
+                <div class="attribution">
+                    by Noah Mozo
+                </div>
+            </div>
+
+            <!-- Fallback if iframe is blocked -->
+            <noscript>
+                <p style="margin-top:12px;color:#8b949e;">
+                    Embeds may not be available. Open the design directly:
+                    <a href="https://www.canva.com/design/DAG1yDB8OlM/HPRkhCcWrte0S8P5RIR_Iw/view?utm_content=DAG1yDB8OlM&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                       target="_blank" rel="noopener noreferrer">Canva — Gray and White Simple Clean Resume</a>
+                </p>
+            </noscript>
+        </article>
+    </main>
+</body>
+</html>
