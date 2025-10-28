@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Table Challenge - Monthly Sales Data</title>
+    <style>
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 85%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+            padding: 8px;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin: 10px;
+        }
+
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .met {
+            background-color: #b3ffb3;
+        }
+
+        .below {
+            background-color: #ffcccc;
+        }
+
+        .near {
+            background-color: #fff0b3;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Monthly Sales Data</caption>
+        <colgroup span="6"></colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">Month</th>
+                <th colspan="2">Performance</th>
+                <th rowspan="2">Target ($)</th>
+                <th rowspan="2">Growth (%)</th>
+                <th rowspan="2">Status</th>
+            </tr>
+            <tr>
+                <th>Branch</th>
+                <th>Sales ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">January</th>
+                <td>North</td>
+                <td>$45,000</td>
+                <td>$40,000</td>
+                <td>+12%</td>
+                <td class="met">Met</td>
+            </tr>
+            <tr>
+                <th scope="row">February</th>
+                <td>South</td>
+                <td>$38,500</td>
+                <td>$42,000</td>
+                <td>-8%</td>
+                <td class="below">Below</td>
+            </tr>
+            <tr>
+                <th scope="row">March</th>
+                <td>East</td>
+                <td>$50,200</td>
+                <td>$48,000</td>
+                <td>+5%</td>
+                <td class="met">Met</td>
+            </tr>
+            <tr>
+                <th scope="row">April</th>
+                <td>West</td>
+                <td>$41,000</td>
+                <td>$40,000</td>
+                <td>+2.5%</td>
+                <td class="met">Met</td>
+            </tr>
+            <tr>
+                <th scope="row">May</th>
+                <td>Central</td>
+                <td>$36,800</td>
+                <td>$39,000</td>
+                <td>-5.6%</td>
+                <td class="below">Below</td>
+            </tr>
+            <tr>
+                <th scope="row">June</th>
+                <td>North</td>
+                <td>$47,300</td>
+                <td>$46,000</td>
+                <td>+2.8%</td>
+                <td class="met">Met</td>
+            </tr>
+            <tr>
+                <th scope="row">July</th>
+                <td>South</td>
+                <td>$44,700</td>
+                <td>$45,000</td>
+                <td>-0.7%</td>
+                <td class="near">Near</td>
+            </tr>
+            <tr>
+                <th scope="row">August</th>
+                <td>East</td>
+                <td>$52,600</td>
+                <td>$50,000</td>
+                <td>+5.2%</td>
+                <td class="met">Met</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
