@@ -1,0 +1,89 @@
+﻿/* ===========================
+   Black Goose Bistro - CSS
+   =========================== */
+
+/* 1. Import Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* 2. Body Styling */
+body {
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 3. H1 Heading */
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 2px solid #57b1dc;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* 4. H2 Subheadings */
+h2 {
+    color: #d1633c;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+/* 5. Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 1em 0;
+}
+
+    /* 6. Navigation List Items */
+    nav ul li {
+        margin: 0 15px;
+    }
+
+        /* 7. Navigation Links */
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+            /* 8. Pseudo-class Hover on Nav Links */
+            nav ul li a:hover {
+                color: #57b1dc;
+            }
+
+/* 9. Order Button GIF */
+.order-image img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+    .order-image img:hover {
+        transform: scale(1.1);
+    }
+
+/* 10. Footer Styling */
+footer {
+    border-top: 1px solid #57b1dc;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 3em;
+}
+
+    /* 11. Footer Social Media Icons */
+    footer img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+/* 12. Section Styling */
+section {
+    margin-bottom: 2em;
+}
