@@ -3,213 +3,103 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Noah Mozo – Emerging Video Game Designer</title>
-    <style>
-        :root {
-            --accent: #333;
-            --light: #f5f5f5;
-            --line: #ccc;
-        }
+    <title>Noah Mozo – Neo-Pixel Game Designer</title>
 
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: var(--light);
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
+    <!-- Retro Pixel + Clean UI Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        .container {
-            max-width: 900px;
-            background: white;
-            margin: 40px auto;
-            padding: 40px 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--line);
-            padding-bottom: 10px;
-        }
-
-            header h1 {
-                margin: 0;
-                font-size: 2em;
-                letter-spacing: 1px;
-            }
-
-            header h2 {
-                margin: 6px 0 12px 0;
-                font-weight: 400;
-                color: #555;
-                font-size: 1.1em;
-            }
-
-        .contact {
-            font-size: 0.95em;
-            line-height: 1.5;
-        }
-
-            .contact a {
-                color: var(--accent);
-                text-decoration: none;
-            }
-
-        section {
-            margin-top: 30px;
-        }
-
-            section h3 {
-                border-bottom: 1px solid var(--line);
-                padding-bottom: 4px;
-                margin-bottom: 10px;
-                font-size: 1.1em;
-                letter-spacing: 0.5px;
-                text-transform: uppercase;
-            }
-
-        .columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        ul {
-            margin: 5px 0 0 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 700px) {
-            .columns {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-            }
-
-            .container {
-                box-shadow: none;
-                margin: 0;
-                padding: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
     <div class="container">
+
         <header>
-            <h1>Noah Mozo</h1>
+            <h1 class="pixel-title">NOAH MOZO</h1>
             <h2>Emerging Video Game Designer</h2>
             <div class="contact">
                 <p>
                     <strong>📞</strong> (754) 971-3067 &nbsp;|&nbsp;
                     <strong>✉️</strong> <a href="mailto:nmozo8653@gmail.com">nmozo8653@gmail.com</a> &nbsp;|&nbsp;
-                    <strong>📍</strong> 1201 University Blvd, Orlando, FL 32817
+                    <strong>📍</strong> Orlando, FL
                 </p>
             </div>
         </header>
 
-        <section>
+        <section class="card">
             <h3>Objective</h3>
             <p>
-                It is my objective to continue cultivating my expertise as an emerging video game designer and
-                engineer with an emphasis on the development of technologies, storytelling, and world-building
-                that create opportunities for connection, collaboration, and a future that uplifts individuals
-                from all walks of life.
+                My goal is to become a video game designer and engineer who blends retro-inspired visuals with
+                futuristic UI concepts — creating unique worlds, mechanics, and experiences.
             </p>
         </section>
 
-        <div class="columns">
-            <section>
+        <div class="grid">
+            <section class="card">
                 <h3>Education</h3>
+
                 <p>
                     <strong>Seminole State College (SSC)</strong><br />
-                    Associate in Arts in Digital Arts &amp; Sciences with a focus on Video Game Design<br />
+                    A.A., Digital Arts & Sciences<br />
                     <em>Fall 2023 – Fall 2025</em>
                 </p>
+
                 <p>
-                    <strong>Archbishop McCarthy High School (AMHS)</strong><br />
-                    Degree earned: Spring 2023
+                    <strong>Archbishop McCarthy High School</strong><br />
+                    Graduated Spring 2023
                 </p>
 
-                <h4>Seminole State Coursework</h4>
+                <h4>SSC Coursework</h4>
                 <ul>
-                    <li>Video Game Design and Coding</li>
-                    <li>Principles of Computer Programming</li>
-                    <li>DIG2500: Fundamentals of Interactive Design</li>
-                    <li>Programming</li>
-                    <li>Scratch</li>
-                    <li>JavaScript</li>
+                    <li>Game Design & Coding</li>
+                    <li>Interactive Design</li>
+                    <li>JavaScript Programming</li>
                     <li>Visual Studio</li>
                 </ul>
 
-                <h4>Archbishop McCarthy Coursework</h4>
+                <h4>AMHS Coursework</h4>
                 <ul>
-                    <li>Video Game Design and Coding</li>
+                    <li>Game Design</li>
                     <li>Electronics</li>
-                    <li>Design Projects</li>
-                    <li>Photoshop</li>
-                    <li>Blender</li>
-                    <li>Illustrator</li>
-                    <li>Internship</li>
+                    <li>Photoshop, Illustrator, Blender</li>
+                    <li>Internship Capstone</li>
                 </ul>
             </section>
 
-            <section>
+            <section class="card">
                 <h3>Volunteering</h3>
 
                 <p>
                     <strong>Sunset Lakes Community</strong><br />
-                    Volunteered at the community clubhouse at Sunset Lakes (Halloween Event, Miramar, FL)
+                    Halloween Event Volunteer
                 </p>
                 <ul>
-                    <li>Assisted with various roles including setting up and guiding guests through activities.</li>
-                    <li>Helped with crowd flow and ensured safe participation for all attendees.</li>
+                    <li>Helped with activity setup and guest navigation</li>
+                    <li>Assisted with safety and event flow</li>
                 </ul>
 
                 <p>
-                    <strong>Immaculate Conception Catholic Church</strong><br />
-                    Assisted with landscaping and rock garden maintenance
+                    <strong>Immaculate Conception Church</strong><br />
+                    Landscaping Project
                 </p>
                 <ul>
-                    <li>Participated in a volunteer project led by Sister Blakey.</li>
-                    <li>Maintained the rock garden area and placed decorative stones as directed.</li>
+                    <li>Rock garden organization and stone placement</li>
+                    <li>Outdoor maintenance assistance</li>
                 </ul>
             </section>
         </div>
 
-        <!-- New Student Works section -->
-        <section>
+        <section class="card">
             <h3>Student Works</h3>
-            <p>
-                Below is one of my digital art pieces, blending real-world environments with science fiction
-                elements inspired by cinematic and game design aesthetics.
-            </p>
+            <p>A digital sci-fi/pixel fusion artwork created for design coursework.</p>
 
             <img src="20230224_230929000_iOS.jpg"
-                 alt="Futuristic city skyline artwork featuring science fiction vehicles over a modern city"
-                 style="
-          width:100%;
-          max-width:850px;
-          display:block;
-          margin:15px auto;
-          border-radius:10px;
-          box-shadow:0 6px 16px rgba(0,0,0,0.25);
-        " />
+                 alt="Sci-fi pixel hybrid artwork"
+                 class="artwork" />
 
-            <p style="font-size:0.9em; color:#555; text-align:center;">
-                Digital artwork by Noah Mozo — created as part of student design projects.
+            <p class="caption">
+                Artwork by Noah Mozo — Student Design Project
             </p>
         </section>
     </div>
 </body>
 </html>
-

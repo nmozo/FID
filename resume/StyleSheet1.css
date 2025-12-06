@@ -1,0 +1,143 @@
+﻿:root {
+    --bg: #090d15;
+    --card-bg: #111620;
+    --pixel-green: #00ff6a;
+    --neon-cyan: #0ff;
+    --text: #d0e8ff;
+    --subtext: #9bbedd;
+    --border-glow: rgba(0, 255, 255, 0.5);
+}
+
+/* Background */
+body {
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    /* Sci-fi digital grid effect */
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--pixel-green);
+}
+
+.pixel-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.6rem;
+    color: var(--pixel-green);
+    text-shadow: 0 0 8px var(--pixel-green);
+}
+
+header h2 {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--subtext);
+}
+
+/* CONTACT */
+.contact a {
+    color: var(--neon-cyan);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+    .contact a:hover {
+        text-shadow: 0 0 8px var(--neon-cyan);
+    }
+
+/* CARDS */
+.card {
+    background: var(--card-bg);
+    border: 2px solid var(--neon-cyan);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+    /* Pixel-shadow + neon glow */
+    box-shadow: 4px 4px 0 var(--pixel-green), 0 0 15px var(--border-glow);
+    transition: 0.3s;
+}
+
+    .card:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 6px 6px 0 var(--pixel-green), 0 0 22px var(--neon-cyan);
+    }
+
+/* HEADINGS */
+h3 {
+    font-family: 'Press Start 2P', monospace;
+    color: var(--neon-cyan);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--pixel-green);
+}
+
+h4 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    color: var(--pixel-green);
+    margin-top: 12px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LISTS */
+ul {
+    margin-left: 20px;
+}
+
+/* STUDENT ARTWORK */
+.artwork {
+    width: 100%;
+    border: 2px solid var(--pixel-green);
+    border-radius: 4px;
+    /* gives pixel-art vibe */
+    image-rendering: pixelated;
+    /* neon glow */
+    box-shadow: 0 0 15px rgba(0,255,150,0.4);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--subtext);
+    font-size: 0.8rem;
+}
+
+/* PRINT */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .card {
+        box-shadow: none;
+        background: white;
+        border-color: black;
+    }
+}
